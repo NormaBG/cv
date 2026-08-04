@@ -2,10 +2,11 @@
 Portfolio personal en HTML, CSS y JavaScript puro, sin dependencias ni frameworks.
 
 ## Estructura
-
+```
 index.html
 CSS/    → styles.css
 JS/     → script.js
+```
 
 ## Características
 
