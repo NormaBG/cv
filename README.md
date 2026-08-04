@@ -3,7 +3,7 @@ Portfolio personal en HTML, CSS y JavaScript puro, sin dependencias ni framework
 
 ## Estructura
 
-HTML/   → index.html
+index.html
 CSS/    → styles.css
 JS/     → script.js
 
