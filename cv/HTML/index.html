@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Norma Bojórquez · Desarrolladora Backend & Robótica</title>
+<meta name="description" content="Portfolio de Norma Bojórquez, desarrolladora backend Jr. con experiencia en Python, ROS 2, APIs REST y bases de datos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/cv/CSS/styles.css">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var theme = saved || (prefersDark ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#inicio" class="brand">bjz<span class="brand-dot">.</span>dev</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#perfil" class="nav-link" data-section="perfil"><span class="topic-tag">/perfil</span></a>
+      <a href="#competencias" class="nav-link" data-section="competencias"><span class="topic-tag">/competencias</span></a>
+      <a href="#experiencia" class="nav-link" data-section="experiencia"><span class="topic-tag">/experiencia</span></a>
+      <a href="#formacion" class="nav-link" data-section="formacion"><span class="topic-tag">/formacion</span></a>
+      <a href="#contacto" class="nav-link" data-section="contacto"><span class="topic-tag">/contacto</span></a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+      <span class="theme-icon theme-icon-sun">☀</span>
+      <span class="theme-icon theme-icon-moon">☾</span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Desarrolladora Backend Jr. · Robótica aplicada</p>
+        <h1>Norma Bojórquez</h1>
+        <p class="hero-sub">Python · ROS 2 · APIs REST · SQL · Testing</p>
+
+        <div class="terminal" aria-hidden="false">
+          <div class="terminal-bar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="terminal-title">bash</span>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line"><span class="prompt">$</span> rostopic echo /perfil<span class="cursor" id="typeCursor"></span></p>
+            <p class="terminal-output" id="typeOutput"></p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Contactar</a>
+          <a href="#experiencia" class="btn btn-ghost">Ver experiencia</a>
+        </div>
+
+        <ul class="hero-meta">
+          <li><i class="icon" data-icon="pin"></i>Los Mochis, Sinaloa, México</li>
+          <li><i class="icon" data-icon="mail"></i>norma_bojorquez26@hotmail.com</li>
+          <li><i class="icon" data-icon="phone"></i>558 518 7594</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="perfil">
+    <div class="wrap">
+      <p class="section-topic">// topic: /perfil &nbsp; type: string</p>
+      <h2 class="section-title">Perfil profesional</h2>
+      <p class="section-lead">
+        Desarrolladora de software con más de 2 años de experiencia en backend, APIs REST y aplicaciones
+        web con stack MERN. Experiencia adicional en robótica aplicada con robots Unitree Go2 y G1,
+        desarrollando y ajustando scripts en Python sobre ROS/ROS 2 y comunicación basada en DDS/RTPS para
+        procesamiento de datos de sensores, diagnóstico y navegación. Experiencia con MongoDB y bases
+        relacionales como SQL Server, MySQL y MariaDB, validación de endpoints con Postman y colaboración
+        en equipos ágiles. Conocimientos en C#, C++, Java y fundamentos de pruebas unitarias.
+      </p>
+    </div>
+  </section>
+  <section class="section section-alt" id="competencias">
+    <div class="wrap">
+      <p class="section-topic">// topic: /competencias &nbsp; type: skill_array[]</p>
+      <h2 class="section-title">Competencias técnicas</h2>
+
+      <div class="skills-grid">
+
+        <article class="skill-card">
+          <h3>Backend y APIs</h3>
+          <ul class="tag-list">
+            <li>Node.js</li><li>Express.js</li><li>REST APIs</li>
+            <li>Arquitectura cliente-servidor</li><li>Servicios modulares</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Robótica y middleware</h3>
+          <ul class="tag-list">
+            <li>Python</li><li>ROS</li><li>ROS 2</li><li>DDS/RTPS</li>
+            <li>Unitree Go2 / G1</li><li>Topics pub/sub</li><li>LiDAR / range info</li>
+            <li>Navegación y evasión</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Bases de datos</h3>
+          <ul class="tag-list">
+            <li>MongoDB</li><li>SQL Server</li><li>MySQL</li><li>MariaDB</li>
+            <li>Modelado de datos</li><li>Fundamentos PostgreSQL</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Testing y calidad</h3>
+          <ul class="tag-list">
+            <li>Postman</li><li>Validación de endpoints</li>
+            <li>Pruebas funcionales de API</li><li>Pruebas unitarias</li><li>Debugging</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Lenguajes y web</h3>
+          <ul class="tag-list">
+            <li>JavaScript</li><li>Python</li><li>C#</li><li>C++</li>
+            <li>Java</li><li>PHP</li><li>HTML</li><li>CSS</li><li>React</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Herramientas y colaboración</h3>
+          <ul class="tag-list">
+            <li>Git</li><li>GitHub</li><li>Linux / Ubuntu</li>
+            <li>Metodologías ágiles</li><li>Resolución de problemas</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <section class="section" id="experiencia">
+    <div class="wrap">
+      <p class="section-topic">// topic: /experiencia &nbsp; type: job_history[]</p>
+      <h2 class="section-title">Experiencia laboral</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Backend Developer / Full Stack MERN &amp; Robotics Software</h3>
+              <span class="timeline-date">Abr 2024 — Presente</span>
+            </div>
+            <p class="timeline-company">INDQ S.A. de C.V. · Los Mochis</p>
+            <ul class="bullet-list">
+              <li>Desarrollo y mantenimiento de aplicaciones web con stack MERN, participando en frontend y backend según los requerimientos del proyecto.</li>
+              <li>Diseño, creación y optimización de APIs REST con Node.js y Express para la comunicación entre cliente, servidor y base de datos.</li>
+              <li>Integración de módulos backend con interfaces en React, cuidando la separación de responsabilidades entre rutas, controladores, modelos y lógica de negocio.</li>
+              <li>Desarrollo y ajuste de scripts en Python para integración con robots Unitree Go2 y G1, lectura de sensores y comunicación con SDK/ROS/ROS 2.</li>
+              <li>Trabajo con tópicos publish/subscribe y comunicación basada en DDS/RTPS para adquisición, diagnóstico y procesamiento de datos en sistemas robóticos.</li>
+              <li>Procesamiento de datos de sensores LiDAR/range info, aplicando filtrado, normalización y redondeo de lecturas para mejorar estabilidad y tiempo de respuesta.</li>
+              <li>Validación de endpoints y flujos de API con Postman, revisando respuestas, entradas, manejo de errores y comportamiento esperado.</li>
+              <li>Colaboración en equipo bajo metodologías ágiles, adaptándose a lineamientos técnicos y dando seguimiento a incidencias y mejoras del producto.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section section-alt" id="formacion">
+    <div class="wrap">
+      <p class="section-topic">// topic: /formacion &nbsp; type: education[]</p>
+      <h2 class="section-title">Formación académica</h2>
+
+      <div class="edu-grid">
+        <article class="edu-card">
+          <div class="timeline-head">
+            <h3>Ingeniera de Software</h3>
+            <span class="timeline-date">Sep 2019 — Ene 2025</span>
+          </div>
+          <p class="timeline-company">Universidad Autónoma de Sinaloa · Los Mochis</p>
+          <ul class="bullet-list">
+            <li>Formación en programación avanzada, desarrollo web, bases de datos relacionales y diseño de soluciones de software.</li>
+            <li>Experiencia académica con C#, C++, JavaScript, PHP, HTML, SQL Server, MySQL y MariaDB.</li>
+          </ul>
+        </article>
+
+        <article class="edu-card">
+          <div class="timeline-head">
+            <h3>Técnico en Programación</h3>
+            <span class="timeline-date">Sep 2016 — Jul 2019</span>
+          </div>
+          <p class="timeline-company">CECYTEM · Cuautitlán</p>
+          <ul class="bullet-list">
+            <li>Base técnica en lógica de programación, desarrollo de software, Java, C++ y gestión de bases de datos SQL.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="soft-block">
+        <h3>Competencias profesionales</h3>
+        <ul class="tag-list">
+          <li>Trabajo en equipo</li><li>Responsabilidad</li><li>Comunicación asertiva</li>
+          <li>Resolución de problemas</li><li>Colaboración</li><li>Gestión eficaz del tiempo</li><li>Puntualidad</li>
+        </ul>
+      </div>
+
+      <div class="soft-block">
+        <h3>Idiomas</h3>
+        <ul class="tag-list">
+          <li>Español</li><li>Inglés</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <div class="wrap">
+      <p class="section-topic">// topic: /contacto &nbsp; type: contact_info</p>
+      <h2 class="section-title">Hablemos</h2>
+      <p class="section-lead">
+        Disponible para nuevas oportunidades como desarrolladora.
+      </p>
+      <p class="section-lead">
+        Escríbeme por cualquiera de estos medios.
+      </p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:norma_bojorquez26@hotmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">norma_bojorquez26@hotmail.com</span>
+        </a>
+        <a class="contact-card" href="tel:+525585187594">
+          <span class="contact-label">Teléfono</span>
+          <span class="contact-value">558 518 7594</span>
+        </a>
+        <a class="contact-card" href="#" id="githubLink">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/tu-usuario</span>
+        </a>
+        <a class="contact-card" href="#" id="linkedinLink">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/tu-usuario</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year"></span> Norma Bojórquez · Los Mochis, Sinaloa, México</p>
+    <button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+  </div>
+</footer>
+
+<script src="/cv/JS/script.js"></script>
+</body>
+</html>
